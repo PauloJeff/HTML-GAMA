@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário de cadastro</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <div>
+        <label>Primeiro nome: </label><input type="text">
+    </div>
+    <div>
+        <label>Sobrenome: </label><input type="text">
+    </div>
+    <div>
+        <label>Sexo: </label>
+        <select>
+            <option value="" default>Selecione</option>
+            <option value="1">Masculino</option>
+            <option value="2">Feminio</option>
+        </select>
+    </div>
+    <div>
+        <label>Sexo: </label><br>
+        <label>Masculino </label><input type="checkbox"><br>
+        <label>Feminio </label><input type="checkbox">
+    </div>
+    <div>
+        <label>Sexo: </label><br>
+        <label>Masculino </label><input type="radio" name="sexo" checked>
+        <label>Feminino </label><input type="radio" name="sexo">
+    </div>
+    <div>
+        <label>Descrição: </label><br>
+        <textarea rows="5"></textarea>
+    </div>
+    <div>
+        <label>Data Nascimento: </label><input type="date" required>
+    </div>
+    <div>
+        <label>Registrar ponto: </label><input type="datetime" required>
+    </div>
+    <div>
+        <label>Cor predileta: </label><input type="color" required>
+    </div>
+    <br>
+    <form method="GET">
+        <div>
+            <label>E-mail: </label><input type="email" name="email" required>
+        </div>
+        <div>
+            <label>Senha: </label><input type="password" name="password" required>
+        </div>
+        <button type="submit" required>Enviar</button>
+    </form>
+    <br>
+    <form method="POST">
+        <div>
+            <label>E-mail: </label><input type="email" required>
+        </div>
+        <div>
+            <label for="password">Senha: </label><input type="password" id="password" required>
+        </div>
+        <button type="submit" required>Enviar</button>
+    </form>
+</body>
+</html>
